@@ -28,6 +28,11 @@ body {
     color: whitesmoke;
 }
 
+
+h1 {
+    padding: 30px; 
+}
+
 h1, h2, h3 {
     font-family: 'Kaisei HarunoUmi', serif;
 }
