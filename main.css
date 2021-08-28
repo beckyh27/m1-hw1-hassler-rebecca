@@ -1,3 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display: block;
+  }
+
+/************************* STICKY FOOTER  *************************/
+
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+.site-content {
+    flex: 1;
+  }
+ 
+  /************************* STICKY FOOTER  *************************/
+
 body {
     background-color: rgb(10, 75, 71);
     font-family: 'Montserrat', sans-serif;
@@ -12,11 +36,27 @@ h1 {
     font-size: 3rem;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+li {
+    display: inline;
+  }
+
 h2 {
     font-size: 2rem;
 }
 
+footer {
+    background-color: whitesmoke;
+    color: rgb(10, 75, 71);
+    padding: 55px 0;
+}
+
 h3 {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
