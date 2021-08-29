@@ -86,5 +86,17 @@ footer {
 
 h3 {
     text-align: center;
-    font-size: 1.1rem;
+    font-size: .9rem;
+    padding: 0 10px;
 }
+
+/************************************* START 930PX MEDIA QUERY *************************************/
+@media (min-width: 930px) {
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+}
+
+/************************************* END 930PX MEDIA QUERY *************************************/
