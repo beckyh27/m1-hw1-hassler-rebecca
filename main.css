@@ -31,33 +31,74 @@ body {
 
 header {
     background-color: rgb(10, 75, 71);
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
     padding: 30px 0;
     margin-bottom: 3px;
 }
 
 h1 {
-    padding: 0 30px;
-    font-size: 2.1rem;
+    padding: 15px 10px;
+    font-size: 1.2rem;
 }
+
+.desktop-nav {
+	display: none;
+}
+
+/***************** HAMBURGER MENU STYLES START *****************/
+
+.hamburger{
+	background: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	line-height: 45px;
+	padding: 5px 9px 0 15px;
+	color: whitesmoke;
+	border: 0;
+	font-size: 3.4em;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+	z-index: 10000000000000;
+}
+.cross{
+	background: none;
+	position: absolute;
+	top: 0px;
+	right: 0;
+	padding: 10px 15px 0px 15px;
+	color: whitesmoke;
+	border: 0;
+	font-size: 6em;
+	line-height: 65px;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+	z-index: 10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; color: rgb(10, 75, 71); border-bottom:rgb(10, 75, 71) 1px solid;}
+.menu li:hover{display: block;    background:whitesmoke; padding:15px 0 15px 0; border-bottom:rgb(10, 75, 71) 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; rgb(10, 75, 71);}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+.glyphicon-home{
+  color:rgb(10, 75, 71);
+  font-size:1.5em;
+  margin-top:5px;
+  margin:0 auto;
+}
+header{display:inline-block; font-size:12px;}
+span{padding-left:20px;}
+a{color:whitesmoke;}
+
+/***************** HAMBURGER MENU STYLES END *****************/
 
 h1, h2, h3 {
     font-family: 'Kaisei HarunoUmi', serif;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0 30px 4px;
-    text-align: right;
-}
-
-li {
-    display: inline;
-    padding: 0 10px;
-    font-size: 1.1rem;
 }
 
 main {
@@ -89,6 +130,38 @@ h3 {
 
 /************************************* START 930PX MEDIA QUERY *************************************/
 @media (min-width: 930px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    h1 {
+        padding: 0 30px;
+        font-size: 2.1rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: block;
+    }
+
+    .desktop-nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0 30px 4px;
+        text-align: right;
+    }
+    
+    .desktop-nav li {
+        display: inline;
+        padding: 0 10px;
+        font-size: 1.1rem;
+    }
 
     h2 {
         font-size: 1.8rem;
