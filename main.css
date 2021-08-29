@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     border: 0;
-  }
+}
   
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
     display: block;
-  }
+}
 
 /************************* STICKY FOOTER  *************************/
 
@@ -14,20 +14,19 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-  }
+}
   
 .site-content {
     flex: 1;
-  }
+}
  
-  /************************* STICKY FOOTER  *************************/
+/************************* STICKY FOOTER  *************************/
 
 body {
     background-color: rgb(10, 75, 71);
     font-family: 'Montserrat', sans-serif;
     color: whitesmoke;
 }
-
 
 h1 {
     padding: 30px; 
@@ -44,12 +43,15 @@ h1 {
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
-  }
+    padding: 0 40px;
+    text-align: right;
+}
 
 li {
     display: inline;
-  }
+    padding: 0 40px;
+    font-size: 1.1rem;
+}
 
 h2 {
     font-size: 2rem;
